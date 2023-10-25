@@ -1,7 +1,0 @@
-name = input('Enter your name: ')
-age = input('Enter your age: ')
-
-print("Please share the information asked for:\n" );
-print(name)
-print(str(age))
-
