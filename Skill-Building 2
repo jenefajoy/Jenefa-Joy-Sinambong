@@ -1,0 +1,35 @@
+1. number= int(input("Enter a number: "))
+if number > 0:
+    print("POSITIVE")
+else:
+    print("NEGATIVE")
+
+2. name = input("Enter a name: ")
+subnum1 = int(input("Enter your grade for subnum1:"))
+subnum2 = int(input("Enter your grade for subnum2:"))
+subnum3 = int(input("Enter your grade for subnum3:"))
+subnum4 = int(input("Enter your grade for subnum4:"))
+subnum5 = int(input("Enter your grade for subnum5:"))
+sum = (subnum1+subnum2+subnum3+subnum4+subnum5)/5
+print("Name: " + name)
+print("Average: " + str(sum))
+
+if sum> 85: 
+    print("Highest honor")
+elif sum >= 80:
+    print ("With honor")
+elif sum >= 75:
+    print("Pass")
+else:    
+    print("Failed")
+
+3. username = input("Enter your username: ")
+password = input("Enter your password: ")
+
+user = 'jenefa143'
+pw = 'gwapako123'
+
+if username == user and password == pw:
+    print('Login')
+else: 
+    print('Invalid credential')
