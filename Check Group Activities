@@ -1,0 +1,79 @@
+max_attempts = 5
+correct_username = "group"
+correct_password = "5"
+
+for attempt in range(max_attempts):
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
+
+    if username == correct_username and password == correct_password:
+        print("Login successful. Welcome, " + username + "!")
+        break
+    else:
+        print("Login failed. Please try again.")
+        remaining_attempts = max_attempts - (attempt + 1)
+        if remaining_attempts > 0:
+            print(f"Remaining login attempts: {remaining_attempts}")
+        else:
+            print("Out of login attempts. Account locked.")
+            
+print(" ")
+            
+print(" Answer the questions carefullly. ")            
+questions = [
+    "1.) Generates a set of whole numbers starting from 0 to (n-1): ",
+    "2.) Programming language allows using one loop inside another loop: ",
+    "3.) Generates a set of whole numbers starting from start to stop-1: ",
+    "4.) The default step_size is 1 which is why when we didn't specify the step_size, the numbers generated are having a difference of 1: ",
+    "5.) Python programming language allows using one loop inside another loop.: ",
+    "6.) A loop that is never finished is known as an infinite loop, it means the looping condition is always true, so that loop never terminates.: ",
+    "7.) You can put any type of loop inside of any other type of loop.: ",
+    "8.) Supports having an else statement associated with a loop statement.: ",
+    "9.) An alternative way of iterating through each item is by index offset into the sequence itself.: ",
+    "10.) Enables a particular set of conditions to be executed repeatedly until a condition is satisfied.: ",
+    "11.) The _____ statement allows you to bypass the current iteration of any continue loop.: ",
+    "12.) The _____ statement is used inside the loop to exit out of the loop.: ",
+    "13.) In a loop alter the execution sequence.: ",
+    "14.) The pass statement is considered a no-operation statement, which means it consumes the execution cycle like a valid Python statement, but nothing happens actually when pass is executed.: ",
+    "15.) Is similar to a comment.: ",
+    "16.) It is commonly used to represent _________ or unimplemented functions and loops.: ",
+    "17.) Break will _______ only the innermost loop containing it.: ",
+    "18.) Use the __________ to come out of the loop instantly.: ",
+    "19.) It is used along with _____________, whenever used inside the loop so that it occurs only for a particular condition.: ",
+    "20.) Inside the while loop, the __________ variable is incremented by 1 with each iteration.: ",
+    "21.) Determines whether two criteria are True at the same time.: ",
+    "22.) Is only valid for one condition.: ",
+    "23.) Python evaluates logical operators in the order they are listed when you mix them in an expression, which is known as.: ",
+    "24.) What is the operator of Logical NOT: True if the operand is false.: ",
+    "25.) What is the operator of Logical OR: True if either of the operands is true.: ",
+    "26.) What is the operator of Logical AND: True if both the operands are true.: ",
+    "27.) _______________, like the AND operator, examines multiple conditions.: ",
+    "28.) It is a programming concept in which the compiler skips the execution or evaluation of some sub-expressions in a logical expression.: ",
+    "29.) Is a common way to show logical relationships.: ",
+    "30.) In case an expression has several logical operators with the same precedence, Python will evaluate them from the.: "
+]
+
+correct_answers = [
+    "range(n)", "python", "range(start, stop)", "range(start, stop, step_size)", "nested loop",
+    "infinite loop", "final note on loop nesting", "python", "iterating by sequence index", "for loop",
+    "continue", "break", "control statements", "pass", "pass", "null", "exit", "break statement",
+    "if statement", "count", "the and operator", "the not operator", "operator precedence", "not", "or",
+    "and", "or operator", "short-circuit evaluation", "truth table", "left to right"
+]
+
+count = 0
+
+for i in range(len(questions)):
+    user_answer = input(questions[i])
+    if user_answer == correct_answers[i]:
+        print("Correct!")
+        count += 1
+    else:
+        print("Wrong. The correct answer is " + correct_answers[i])
+    print(" ")
+    
+print("Total Score: " + str(count))
+if count < 15:
+    print("You failed.")
+else:
+    print("You passed.")
