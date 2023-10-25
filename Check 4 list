@@ -1,0 +1,22 @@
+1. car_brands = ["Toyota", "BMW", "Ford", "Ferrari", "Nissan"]
+car_brands.append("Honda") 
+car_brands.append("Porsche")
+car_brands.append("Hyundai")
+print(car_brands)
+
+
+2. motor_brands = ["BWM", "Toyota", "Honda", "Suzuki", "Ford"]
+motor_brands.insert(3, "Nissan")
+del motor_brands[5]
+print(motor_brands)
+
+
+3. fruits = ["Watermelon", "Apple", "Mango", "Guava", "Banana"]
+fruits[4] = "Hello"
+print(fruits) 
+
+
+4. animals = ["tiger", "dog", "cat", "giraffe", "horse" ]
+animals.remove ("horse")
+print (animals)
+
