@@ -1,0 +1,54 @@
+1. Name = input ("Enter your name: ")
+Age = input ("Enter your age: ")
+full = Name + " " + Age
+print(full)
+
+OUTPUT: 
+Enter your name: Jenefa Joy
+Enter your age: 19
+Jenefa Joy 19
+
+2. fname = input ("Enter your fname: ")
+lname = input ("Enter your lname: ")
+gender = input ("Enter your gender: ")
+phoneNumber = input ("Enter your phone number: ")
+location = input ("Enter your location: ")
+
+fullInformation = fname + " " + lname + ", " + gender + ", " + phoneNumber + ", " + location
+print(fullInformation)
+
+OUTPUT: 
+Enter your fname: Jenefa Joy
+Enter your lname: Sinambong
+Enter your gender: Female
+Enter your phone number: 09685530640
+Enter your location: Cebu City
+Jenefa Joy Sinambong, Female, 09685530640, Cebu City
+
+3. num1 = int(input("Enter a number: "))
+num2 = int(input(" Enter another number: "))
+
+sum = num1 + num2 
+print (str(num1) + " + " + str(num2) + " =", str(sum))
+
+
+OUTPUT: 
+Enter a number: 7
+Enter another number: 5
+7 + 5 = 12
+
+4. studentName =input ("Enter your studentName: ")
+sub1 = float(input("sub1: "))
+sub2 = float(input("sub2: "))
+sub3 = float(input("sub3: "))
+sub4 = float(input("sub4: "))
+average = ((sub1 + sub2 + sub3 + sub4)/4)
+print(studentName + ": " + str(average))
+
+OUTPUT: 
+Enter your studentName: Jenefa Joy
+sub1: 89
+sub2: 88
+sub3: 87
+sub4: 86
+Jenefa Joy: 87.5
