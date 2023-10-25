@@ -1,0 +1,27 @@
+first_name = input("Enter employee's first name: ")
+last_name = input("Enter employee's last name: ")
+salary = float(input("Enter employee's salary: "))
+performance_rating = int(input("Enter employee's rating (1, 2, 3, or 4): "))
+
+bonus = None
+
+if performance_rating == 1:
+    bonus = .10 * salary
+elif performance_rating == 2:
+    bonus = .06 * salary
+elif performance_rating == 3:
+    bonus = .03 * salary
+
+print(f"First name: {first_name}")
+print(f"Last name: {last_name}")
+print(f"Salary: {salary}")
+print(f"Rating: {performance_rating}\n")
+
+print(f"Name: {first_name} {last_name}")
+print(f"Salary: {salary}")
+print(f"Rating: {performance_rating}")
+
+if bonus is not None:
+    print(f"Bonus: {bonus}")
+else:
+    print("No bonus for this rating.")
