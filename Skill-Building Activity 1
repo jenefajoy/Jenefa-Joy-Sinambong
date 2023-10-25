@@ -1,0 +1,18 @@
+1. name = input('Enter your name: ')
+age = input('Enter your age: ')
+
+print("Please share the information asked for:\n" );
+print(name)
+print(str(age))
+
+2. num1 = int(input('Enter your num1: '))
+num2 = int(input('Enter your num2: '))
+
+sum = num1+num2
+print(sum) 
+
+3. car_brands = ["Toyota", "Mazda", "Lambo", "Suzuki", "Tesla"]
+car_brands.append("BMW")
+del car_brands[2]
+
+print(car_brands)
